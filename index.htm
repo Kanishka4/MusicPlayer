@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+    <!--styling sheets-->
+    <link rel="stylesheet" type="text/css" href="Assets\index.css">
+
+    <!--FontAwesome CDN-->
+    <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--header section-->
+    <header class="header">
+
+        <!--left part of header-->
+        <div style="display:flex; float:left; justify-content: space-between; width: 40vw">
+            <div class="profileImage">
+                <img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1323/original/Coding_Ninjas_logo.jpeg">
+                <div>Ninja <strong>Studio</strong></div>
+            </div>
+
+            <div style="padding-top:2vh ;">
+                Favourites
+            </div>
+       </div>
+
+       <!--right part of header-->
+        <div style="display: flex; float:right; justify-content:space-between; width: 25%">
+            <div id="searchBar">
+                <!--Search Icon-->
+                <i class="fas fa-search search-ico"></i> 
+                <!--search textfield-->
+                <input type="text" placeholder="Search">
+                <!--Microphone Icon-->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+            <div id="notificationIcon">
+                <i class="fas fa-bell"></i>
+            </div>
+            <div class="profileImage">
+                <img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1323/original/Coding_Ninjas_logo.jpeg">
+            </div>
+        </div>
+    </header>
+
+    <!--section containing carousel, artists, queues-->
+    <main>
+        <!--contains carousel and lists of artists-->
+    <article class="main-section">
+
+        <section class="carousel">
+
+           
+            <!--image stack for carousel-->
+          <div class="inner-carousel">
+            <img src="Assets\images\carouselImage1.jpg">
+            <img src="Assets\images\carouselImage2.jpg">
+            <img src="Assets\images\carouselImage3.jpg">
+          </div>
+
+          
+        </section>
+    </article>
+
+    <!--contains queue and playlists-->
+    <aside>
+        <div class="aside-header">
+
+            <div class="aside-heading">
+                Queue
+            </div>
+
+            <div class="dropdown-list">
+                <select>
+                    <option value="" disabled selected hidden>Queue</option>
+                    <option value="playlist"><a href>Playlist</a></option>
+                    <option value="Favourites"><a href="#">Favourites</a></option>
+                    <option value=""><a href="#">close</a></option>
+                </select>
+            </div>
+
+        </div>
+
+        <!--tracklist-->
+        <div class="playlist-content">
+
+            <!--track field-->
+            <div class="track">
+
+                <!--contains index and image of song-->
+                <div class="left-content">
+                    <div class="index">
+                        01 &emsp;
+                    </div>
+                    <div class="track-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb184c693111b41bc7f101ce8a">
+                    </div>
+                </div>
+
+                <!--contains name and artist of the song-->
+                <div class="middle-content">
+                    <div class="trackName">
+                        Apocalyse
+                    </div>
+                    <div class="trackArtist" style="opacity: 0.5;">
+                        Cigarettes after sex
+                    </div>
+                </div>
+
+                <!--contains the heart icon-->
+                <div class="right-content">
+                    <i class="far fa-heart"></i>
+                </div>
+
+            </div>
+
+            <div class="track">
+
+                <!--contains index and image of song-->
+                <div class="left-content">
+                    <div class="index">
+                        02 &emsp;
+                    </div>
+                    <div class="track-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb184c693111b41bc7f101ce8a">
+                    </div>
+                </div>
+
+                <!--contains name and artist of the song-->
+                <div class="middle-content">
+                    <div class="trackName">
+                        Apocalyse
+                    </div>
+                    <div class="trackArtist" style="opacity: 0.5;">
+                        Cigarettes after sex
+                    </div>
+                </div>
+
+                <!--contains the heart icon-->
+                <div class="right-content">
+                    <i class="far fa-heart"></i>
+                </div>
+
+            </div>
+
+            <div class="track">
+
+                <!--contains index and image of song-->
+                <div class="left-content">
+                    <div class="index">
+                        03 &emsp;
+                    </div>
+                    <div class="track-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb184c693111b41bc7f101ce8a">
+                    </div>
+                </div>
+
+                <!--contains name and artist of the song-->
+                <div class="middle-content">
+                    <div class="trackName">
+                        Apocalyse
+                    </div>
+                    <div class="trackArtist" style="opacity: 0.5;">
+                        Cigarettes after sex
+                    </div>
+                </div>
+
+                <!--contains the heart icon-->
+                <div class="right-content">
+                    <i class="far fa-heart"></i>
+                </div>
+
+            </div>
+
+            <div class="track">
+
+                <!--contains index and image of song-->
+                <div class="left-content">
+                    <div class="index">
+                        04 &emsp;
+                    </div>
+                    <div class="track-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb184c693111b41bc7f101ce8a">
+                    </div>
+                </div>
+
+                <!--contains name and artist of the song-->
+                <div class="middle-content">
+                    <div class="trackName">
+                        Apocalyse
+                    </div>
+                    <div class="trackArtist" style="opacity: 0.5;">
+                        Cigarettes after sex
+                    </div>
+                </div>
+
+                <!--contains the heart icon-->
+                <div class="right-content">
+                    <i class="far fa-heart"></i>
+                </div>
+
+            </div>
+
+            <div class="track">
+
+                <!--contains index and image of song-->
+                <div class="left-content">
+                    <div class="index">
+                        05 &emsp;
+                    </div>
+                    <div class="track-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb184c693111b41bc7f101ce8a">
+                    </div>
+                </div>
+
+                <!--contains name and artist of the song-->
+                <div class="middle-content">
+                    <div class="trackName">
+                        Apocalyse
+                    </div>
+                    <div class="trackArtist" style="opacity: 0.5;">
+                        Cigarettes after sex
+                    </div>
+                </div>
+
+                <!--contains the heart icon-->
+                <div class="right-content">
+                    <i class="far fa-heart"></i>
+                </div>
+
+            </div>
+
+            <div class="track">
+
+                <!--contains index and image of song-->
+                <div class="left-content">
+                    <div class="index">
+                        06 &emsp;
+                    </div>
+                    <div class="track-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb184c693111b41bc7f101ce8a">
+                    </div>
+                </div>
+
+                <!--contains name and artist of the song-->
+                <div class="middle-content">
+                    <div class="trackName">
+                        Apocalyse
+                    </div>
+                    <div class="trackArtist" style="opacity: 0.5;">
+                        Cigarettes after sex
+                    </div>
+                </div>
+
+                <!--contains the heart icon-->
+                <div class="right-content">
+                    <i class="far fa-heart"></i>
+                </div>
+
+            </div>
+
+
+            <div class="track">
+
+                <!--contains index and image of song-->
+                <div class="left-content">
+                    <div class="index">
+                        07 &emsp;
+                    </div>
+                    <div class="track-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb184c693111b41bc7f101ce8a">
+                    </div>
+                </div>
+
+                <!--contains name and artist of the song-->
+                <div class="middle-content">
+                    <div class="trackName">
+                        Apocalyse
+                    </div>
+                    <div class="trackArtist" style="opacity: 0.5;">
+                        Cigarettes after sex
+                    </div>
+                </div>
+
+                <!--contains the heart icon-->
+                <div class="right-content">
+                    <i class="far fa-heart"></i>
+                </div>
+
+            </div>
+
+            <div class="track">
+
+                <!--contains index and image of song-->
+                <div class="left-content">
+                    <div class="index">
+                        08 &emsp;
+                    </div>
+                    <div class="track-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb184c693111b41bc7f101ce8a">
+                    </div>
+                </div>
+
+                <!--contains name and artist of the song-->
+                <div class="middle-content">
+                    <div class="trackName">
+                        Apocalyse
+                    </div>
+                    <div class="trackArtist" style="opacity: 0.5;">
+                        Cigarettes after sex
+                    </div>
+                </div>
+
+                <!--contains the heart icon-->
+                <div class="right-content">
+                    <i class="far fa-heart"></i>
+                </div>
+
+            </div>
+
+            <div class="track">
+
+                <!--contains index and image of song-->
+                <div class="left-content">
+                    <div class="index">
+                        09 &emsp;
+                    </div>
+                    <div class="track-image">
+                        <img src="https://i.scdn.co/image/ab6761610000e5eb184c693111b41bc7f101ce8a">
+                    </div>
+                </div>
+
+                <!--contains name and artist of the song-->
+                <div class="middle-content">
+                    <div class="trackName">
+                        Apocalyse
+                    </div>
+                    <div class="trackArtist" style="opacity: 0.5;">
+                        Cigarettes after sex
+                    </div>
+                </div>
+
+                <!--contains the heart icon-->
+                <div class="right-content">
+                    <i class="far fa-heart"></i>
+                </div>
+
+            </div>
+        </div>
+    </aside>
+</main>
+
+
+</body>
+</html>

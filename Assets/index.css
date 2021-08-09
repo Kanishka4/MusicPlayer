@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital@0;1&display=swap');
+
+body{
+    background-color:#13274F;
+    color: white;
+}
+
+/*header styling*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    height:15vh;
+    font-family: 'Andada Pro', serif;
+}
+
+.profileImage{
+    display: flex;
+}
+.profileImage>div{
+    display: flex;
+    flex-direction: column;
+}
+
+.profileImage img{
+    border-radius: 50%;
+    height:8vh;
+}
+
+/*setting color of fav icons*/
+i{
+    background-color:white;
+}
+
+#searchBar{
+    background-color:#364461;
+    opacity: 0.5;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#searchBar input{
+    border:none;
+    background-color:#364461;
+}
+
+#notificationIcon{
+    height:3rem;
+}
+/*header finished*/
+
+/*general settings for main*/
+main{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+}
+
+
+/*carousel styling*/
+.carousel{
+    position: relative;
+	transition: all ease-in-out 1s;
+   display: flex;
+   justify-content: center;
+   margin: 2rem 2rem;
+}
+
+.inner-carousel{
+	width: 70%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+    align-items: center;
+}
+
+.inner-carousel img{
+    width: 25vw;
+    height: 30vh;
+}
+
+.carousel img:nth-child(1) {
+	position: relative;
+	
+	z-index: 2;
+}
+/* image which is in the middle of the carousel */
+.carousel img:nth-child(2) {
+	z-index: 3;
+}
+/* third image in the carousel */
+/* if you see it direction wise, then it is the first image in the carousel */
+.carousel img:nth-child(3) {
+	position: relative;
+	
+	z-index: 1;
+}
+
+/* animations for carousel */
+
+.carousel img:hover {
+	z-index: 4;
+	box-shadow: 0px 0px 12px 0.1px black;
+    transform: scale(1.5);
+    transition: ease-in-out 2s;
+}
+
+/*carousel finished*/
+
+
+
+/*aside queue section*/
+
+aside{
+    width: 100%;
+    margin: 2rem 2rem;
+}
+
+
+.aside-header{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: large;
+}
+
+.dropdown-list select{
+    color: white;
+    background-color:#13274F;
+    opacity: 0.7;
+    width: fit-content;
+    border: none;
+}
+
+/*tracklist*/
+
+.playlist-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+
+
+.track{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.left-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index{
+    opacity: 0.5;
+}
+
+.track-image img{
+    width: 35px;
+    height: 35px;
+    border: 0.5px solid rgba(255, 255, 255, 0.9);
+}
+
+.middle-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.right-content{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-heart:hover{
+    transform: scale(1.5,1.5);
+    color:red;
+    transition: all ease-in-out 2s;
+}
+
+
+
+
+
+
