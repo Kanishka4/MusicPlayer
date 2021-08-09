@@ -52,17 +52,26 @@
         <!--contains carousel and lists of artists-->
     <article class="main-section">
 
-        <section class="carousel">
+        <!--Carousel-->
+        <section id="slider">
 
-           
-            <!--image stack for carousel-->
-          <div class="inner-carousel">
-            <img src="Assets\images\carouselImage1.jpg">
-            <img src="Assets\images\carouselImage2.jpg">
-            <img src="Assets\images\carouselImage3.jpg">
-          </div>
+            <!--Indicators-->
+            <input type="radio" name="slider" id="s1">
+            <input type="radio" name="slider" id="s2" checked>
+            <input type="radio" name="slider" id="s3" >
 
-          
+            <!--Carousel Image stack-->
+            <label for="s1" id="slide1">
+                <img src="Assets\images\carouselImage1.jpg" height="100%" width="100%">
+            </label>
+            <label for="s2" id="slide2">
+                <img src="Assets\images\carouselImage2.jpg" height="100%" width="100%">
+            </label>
+            <label for="s3" id="slide3">
+                <img src="Assets\images\carouselImage3.jpg" height="100%" width="100%">
+            </label>
+            
+
         </section>
     </article>
 
@@ -352,6 +361,8 @@
             </div>
         </div>
     </aside>
+
+    
 </main>
 
 
