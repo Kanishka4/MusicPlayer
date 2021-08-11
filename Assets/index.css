@@ -402,7 +402,7 @@ aside{
 
 .fa-heart:hover{
     transform: scale(1.5,1.5);
-    color:red;
+    color:green;
     transition: all ease-in-out 2s;
 }
 
