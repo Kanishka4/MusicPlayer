@@ -10,8 +10,9 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    height:15vh;
+    height:12vh;
     font-family: 'Open Sans', sans-serif;
+    padding-top: 2vh;
 }
 
 .profileImage{
@@ -36,6 +37,7 @@ i{
     background-color:#364461;
     opacity: 0.5;
     height: 5vh;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,6 +46,11 @@ i{
 #searchBar input{
     border:none;
     background-color:#364461;
+    width: 70%;
+}
+
+#searchbar input:hover{
+    border:none;
 }
 
 #notificationIcon{
@@ -54,8 +61,10 @@ i{
 /*general settings for main*/
 main{
     display: grid;
-    grid-template-columns: 80% 20%;
-    margin:2rem 2rem;
+    grid-template-columns: 70% 20%;
+    grid-column-gap: 10%;
+    width: 90%;
+    margin:0 auto;
 }
 
 .main-section{
