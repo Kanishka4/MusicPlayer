@@ -19,7 +19,7 @@
     <header class="header">
 
         <!--left part of header-->
-        <div style="display:flex; float:left; justify-content: space-between; width: 40vw">
+        <div style="display:flex; float:left; justify-content: space-between; align-items:center ;width: 40vw">
             <div class="profileImage">
                 <img src="https://coursereport-s3-production.global.ssl.fastly.net/uploads/school/logo/1323/original/Coding_Ninjas_logo.jpeg">
                 <div>Ninja <strong>Studio</strong></div>
@@ -31,7 +31,7 @@
        </div>
 
        <!--right part of header-->
-        <div style="display: flex; float:right; justify-content:space-between; width: 30%">
+        <div style="display: flex; float:right; justify-content:space-between;align-items:center; width: 30%">
             <div id="searchBar">
                 <!--Search Icon-->
                 <i class="fas fa-search search-ico"></i> 
@@ -701,7 +701,7 @@
         <div class="favicons-middle">
             <i class="fas fa-random"></i>
             <i class="fas fa-step-backward"></i>
-           <button  onclick="playMusic()"> <i onclick="myFunc(this)" class="fa fa-play-circle"></i></button>
+           <button  onclick="playMusic(event)"> <i onclick="myFunc(this)" class="fa fa-play-circle"></i></button>
             <i class="fas fa-step-forward"></i>
             <i class="fa fa-repeat" aria-hidden="true"></i>
 
@@ -761,12 +761,24 @@
 
   
   function playMusic(){
-      audio.play();     
+   
+        console.log('play');
+        if(audio.paused){
+            audio.play();
+        }
+        else{
+            audio.pause();
+        }
+    
 }
 
-function myFunc(x) {
-  x.classList.toggle("fa-pause-circle");
+function myFunc(x){
+    x.classList.toggle("fa-play-circle");
+    x.classList.toggle("fa-pause-circle");
 }
+
+
+
 
 
 
