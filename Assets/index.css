@@ -4,6 +4,7 @@ body{
     background-color:#13274F;
     color: white;
     font-family: 'Open Sans', sans-serif;
+    margin: 0px 0px;
 }
 
 /*header styling*/
@@ -13,6 +14,7 @@ body{
     height:12vh;
     font-family: 'Open Sans', sans-serif;
     padding-top: 2vh;
+    margin: 0 1rem;
 }
 
 .profileImage{
@@ -417,6 +419,15 @@ aside{
 
 
 
+/*footer*/
 
+.footer-player{
+    width: 100%;
+    height: 12vh;
+    background-color: #282828;
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+}
 
 
