@@ -58,6 +58,11 @@ i{
 #notificationIcon{
     height:3rem;
 }
+
+#notificationIcon svg {
+    height: 3rem;
+    width: 1rem;
+}
 /*header finished*/
 
 /*general settings for main*/
