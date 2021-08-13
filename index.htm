@@ -6,9 +6,9 @@
 
     <title>Music Player</title>
     <!--styling sheets-->
-    <link rel="stylesheet" type="text/css" href="Assets\index.css">
+    <link rel="stylesheet" type="text/css" href="Assets\CSS\index.css">
     
-     <link rel="stylesheet" type="text/css" href="Assets\responsiveindex.css">
+     <link rel="stylesheet" type="text/css" href="Assets\CSS\responsiveindex.css">
 
     <!--FontAwesome CDN-->
     <script src="https://kit.fontawesome.com/2d9b67a497.js" crossorigin="anonymous"></script>
@@ -698,6 +698,7 @@
 
     <div class="footer-middle">
 
+        <!--contains pause/play , repeat, forward and previous icons-->
         <div class="favicons-middle">
             <i class="fas fa-random"></i>
             <i class="fas fa-step-backward"></i>
@@ -707,84 +708,38 @@
 
         </div>
 
+        <!--contains music-bar-->
         <div class="progress">
+            <!--current duration-->
             <span class="start"></span>
+
+            <!--duration slider-->
             <div class="progress-bar">
               <div class="now"><audio height="0" width="0" id="music" src="Assets\music\Backstreet Boys - I Want It That Way (Official HD Video) (1).mp3"></audio>
               </div>
             </div>
+
+            <!--end time-->
             <span class="end"></span>
           </div>
 
     </div>
 
+    <!--contains volume bar, sceenplay and add to playlist icons-->
     <div class="footer-right">
-
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-volume-up"></i>
+        <div class="volume-bar-container">
+            <div class="volume-bar-behind"></div>
+            <input type="range" class="volume-slider"  max="100" value="50" step="0.1">
+            <div class="volume-bar-top" style="width: 50%;"></div>
+        </div>
+        <i class="fas fa-expand-alt"></i>
     </div>
     
 </footer>
 
-<script>
-    const audio = document.getElementById('music')
-  const start = document.querySelector('.start')
-  const end = document.querySelector('.end')
-  const progressBar = document.querySelector('.progress-bar')
-  const now = document.querySelector('.now')
-
-  function conversion (value) {
-    let minute = Math.floor(value / 60)
-    minute = minute.toString().length === 1 ? ('0' + minute) : minute
-    let second = Math.round(value % 60)
-    second = second.toString().length === 1 ? ('0' + second) : second
-    return `${minute}:${second}`
-  }
-
-  audio.onloadedmetadata = function () {
-    end.innerHTML = conversion(audio.duration)
-    start.innerHTML = conversion(audio.currentTime)
-  }
-
-  progressBar.addEventListener('click', function (event) {
-    let coordStart = this.getBoundingClientRect().left
-    let coordEnd = event.pageX
-    let p = (coordEnd - coordStart) / this.offsetWidth
-    now.style.width = p.toFixed(3) * 100 + '%'
-
-    audio.currentTime = p * audio.duration
-    audio.play()
-  })
-
-  setInterval(() => {
-    start.innerHTML = conversion(audio.currentTime)
-    now.style.width = audio.currentTime / audio.duration.toFixed(3) * 100 + '%'
-  }, 1000)
-
-  
-  function playMusic(){
-   
-        console.log('play');
-        if(audio.paused){
-            audio.play();
-        }
-        else{
-            audio.pause();
-        }
-    
-}
-
-function myFunc(x){
-    x.classList.toggle("fa-play-circle");
-    x.classList.toggle("fa-pause-circle");
-}
-
-
-
-
-
-
-  
-
-  
-</script>
+<script src="Assets\JS\player.js"></script>
 </body>
 </html>
