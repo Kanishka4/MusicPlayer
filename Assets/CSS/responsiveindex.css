@@ -12,10 +12,7 @@
 
 @media screen and (max-width: 700px){
 
-    main {
-        grid-template-columns: 40% 30%;
-        grid-column-gap: 30%;
-    }
+   
 
     .track{
         grid-template-columns: 30% 40% 10%;
@@ -26,4 +23,15 @@
         margin-left: 2rem;
         margin-right: 2rem;
     }
+}
+
+@media screen and (max-width:700px) {
+    aside{
+        display: none;
+    }
+
+    main {
+        grid-template-columns: 100% 0%;
+    }
+    
 }
