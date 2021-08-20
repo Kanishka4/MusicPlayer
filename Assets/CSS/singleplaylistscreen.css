@@ -2,3 +2,49 @@
     margin-top: 2rem;
     font-weight: bolder;
 }
+
+article{
+    margin: 2rem 2rem;
+}
+
+.playlist-header{
+    height: fit-content;
+    width: 100%;
+    background-color: rgb(63 80 116 / 60%);
+    display: grid;
+    grid-template-columns: 40% 50%;
+    grid-column-gap: 10%;
+}
+
+.playlist-header-left img{
+    height:100%;
+    width: 100%;
+}
+
+.playlist-header-right{
+    display: flex;
+    flex-direction: column;
+    margin:2rem 1rem;
+    width: 80%;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+
+.bottom button{
+    background-image: linear-gradient(40deg, #3457D5,purple);
+    width: 40%;
+    height: 4vh;
+    border:none;
+    color:white;
+}
