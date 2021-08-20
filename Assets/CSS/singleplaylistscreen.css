@@ -48,3 +48,32 @@ article{
     border:none;
     color:white;
 }
+
+.playlist-main{
+   
+    width:100%;
+}
+.playlist-main-content{
+    display: grid;
+    grid-template-columns: 10% 10% 70% 10%;
+    background-color: #202020;
+    margin-top: 1rem;
+    height: 8vh;
+    align-items: center;
+}
+
+.playlist-main-content div{
+    text-align: center;
+}
+
+.track-name{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.favicons {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 20%;
+    align-items: center;
+}
